@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Base App</string>
+
+<!--    SplashScreen-->
+    <string name="splash_screen_title">Renan Castro</string>
+    <string name="splash_screen_footer">Desenvolvedor Android</string>
+<!--    end SplashScreen-->
 </resources>
