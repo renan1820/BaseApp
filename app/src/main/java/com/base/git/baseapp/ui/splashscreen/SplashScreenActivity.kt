@@ -7,7 +7,7 @@ import android.os.Looper
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.base.git.baseapp.R
-import com.base.git.baseapp.ui.intro.MainActivity
+import com.base.git.baseapp.ui.intro.view.IntroActivity
 import com.base.git.baseapp.utils.AnimViewUtil
 import com.base.git.baseapp.utils.configurationEnum.Animation
 
@@ -27,7 +27,7 @@ class SplashScreenActivity : AppCompatActivity() {
     }
 
     private fun goToStartActivity(){
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, IntroActivity::class.java)
         startActivity(intent)
         overridePendingTransition(
             R.anim.no_change,

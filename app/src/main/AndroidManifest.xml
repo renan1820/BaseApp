@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.base.git.baseapp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:name=".BaseApplication"
@@ -8,8 +11,10 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme.NoActionBar">
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:targetApi="m">
         <activity android:name=".ui.splashscreen.SplashScreenActivity"
             android:exported="true"
             android:theme="@style/AppTheme.Splash">
@@ -19,7 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.intro.MainActivity"/>
+        <activity android:name=".ui.intro.view.IntroActivity"/>
 
         <meta-data
             android:name="preloaded_fonts"
